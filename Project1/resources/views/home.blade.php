@@ -15,9 +15,13 @@
                         @endif
 
                         <a href="{{ url('/transfer-coins') }}" class="btn btn-primary">Transfer Coins</a>
+
+
+                        <a href="{{ url('/transaction-history') }}" class="btn btn-secondary">View Transaction History</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 @endsection
