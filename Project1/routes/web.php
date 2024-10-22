@@ -23,5 +23,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/transfer-coins', [CoinController::class, 'transfer'])->middleware('auth'); // Show the transfer form
-Route::post('/transfer-coins', [CoinController::class, 'transfer'])->middleware('auth'); // Handle the form submission
+Route::get('/transfer-coins', [CoinController::class, 'transfer'])->middleware('auth');
 Route::get('/transaction-history', [CoinController::class, 'transactionHistory'])->middleware('auth');
